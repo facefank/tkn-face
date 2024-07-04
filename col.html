@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+      /* ส่วนของ CSS */
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        gap: 150px;
+      }
+
+      /* สำหรับลิสต์ dropdown */
+      .dropdown {
+        position: relative;
+        display: inline-block;
+        margin: 20px;
+      }
+
+      /* ปุ่ม dropdown */
+      .dropdown-btn {
+        padding: 10px;
+        background-color: #00cf85;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        width: 100px;
+        border-radius: 6px;
+      }
+
+      .dropdown-btn:hover {
+        background-color: #00cf85;
+      }
+
+      /* ลิสต์ dropdown */
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        transition: transform 0.5s ease-in-out;
+        transform-origin: top;
+      }
+
+      /* ลิสต์ dropdown จะแสดงเมื่อ hover ที่ปุ่ม dropdown */
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      /* การขยายขนาดช้าๆ */
+      .dropdown-content a {
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        transition: transform 0.5s ease-in-out;
+        color: #000000;
+        /* background-color: #00cf85; */
+      }
+
+      .dropdown-content a:hover {
+        transform: scale(1.1);
+      }
+      .icon-container {
+        display: flex;
+        align-items: center;
+      }
+
+      .text {
+        margin-left: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ส่วนของ HTML -->
+
+    <div class="dropdown">
+      <button class="dropdown-btn">ส่วนงานบริการ</button>
+      <div class="dropdown-content">
+        <a href="#">แจ้งซ่อม</a>
+        <a href="#">เบิก-ยืมอุปกรณ์ IT</a>
+        <a href="#">จองห้องประชุม</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropdown-btn">พนักงานดีเด่น</button>
+      <div class="dropdown-content">
+        <a href="#">พนักงานขายดีเด่น</a>
+        <a href="#">พนักงานบริการดีเด่น</a>
+        <a href="#">Item 3</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropdown-btn">HR</button>
+      <div class="dropdown-content">
+        <a href="#">พนักงานเข้าใหม่</a>
+        <a href="#">พนักงานลาออก</a>
+        <a href="#">สวัดิการพนักงาน</a>
+      </div>
+    </div>
+
+    <a href="#" target="_blank"></a>
+
+    <div class="icon-container">
+      <i class="fas fa-star"></i> <span class="text">1</span>
+    </div>
+  </body>
+</html>

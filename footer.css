@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+
+.footer{
+  background-color:  #041122;
+  padding: 30px 0px;
+  font-family: "Play", sans-serif;
+  text-align: center;
+}
+
+.footer .row a:hover {
+  color: #00cf85;
+}
+
+.footer .row {
+  display: inline-block;
+  width: 100%;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  color: rgb(131, 131, 131);
+  font-size: 0.8em;
+}
+
+.footer .row a {
+  text-decoration: none;
+  color: rgb(131, 131, 131);
+  transition: 0.5s;
+}
+
+#facebook:hover {
+  color: #3b82f6;
+}
+
+#line:hover {
+  color: #00cf85;
+}
+
+#youtube:hover {
+  color: #f43f5e;
+}
+#twitter:hover {
+  color: #13a8edfc;
+}
+
+.footer .row ul {
+  width: 100%;
+}
+
+.footer .row ul li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+.footer .row a i {
+  font-size: 2em;
+  margin: 0% 1%;
+}
+
+@media (max-width: 720px) {
+  .footer {
+    text-align: left;
+    padding: 5%;
+  }
+  .footer .row ul li {
+    display: block;
+    margin: 10px 0px;
+    text-align: left;
+  }
+  .footer .row a i {
+    margin: 0% 3%;
+  }
+}
